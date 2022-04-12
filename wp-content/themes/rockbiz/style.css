@@ -1,0 +1,306 @@
+/*
+Theme Name: RockBiz
+Theme URI: https://speciatheme.com/rockbiz-free/
+Author: Specia
+Author URI: https://speciatheme.com/
+Description: RockBiz is a trending WordPress theme with lots of powerful features, instantly giving a professional look to your online presence. RockBiz comes with everything you could ever need to build an amazing website, and it's perfect for any type of business! View the demo of RockBiz Premium https://demo.speciatheme.com/pro/?theme=rockbiz
+Template: specia
+Version: 1.0.15
+Tested up to: 5.9
+Requires PHP: 5.6
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: rockbiz
+Tags: one-column, two-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu,  custom-logo, featured-image-header, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, blog, entertainment, portfolio, editor-style, grid-layout
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+
+section.footer-copyright p a {
+    color: #B61010;
+}
+
+.entry-content a, .comment-content a, .widget_text a, strong a, blockquote a, code a, p a{
+    color: #B61010;
+    text-decoration: underline;
+}
+
+.sidebar .widget input[type="submit"]:hover,
+.sidebar .widget input[type="submit"]:focus,
+.sidebar .wp-block-search .wp-block-search__button:hover,
+.sidebar .wp-block-search .wp-block-search__button:focus {
+    background: #B61010;
+    border-color: #B61010;
+}
+
+.features-version-one .feature-box-info h4 {
+    color: #B61010;
+}
+
+.breadcrumb .background-overlay {
+    padding-top: 50px;
+}
+
+/*---------------------------------------------
+    Header RockBiz (nav-rockbiz)
+---------------------------------------------*/
+.header {
+    min-height: auto;
+}
+
+.nav-rockbiz .header-widget-info.sticky-nav.sticky-menu {
+    background-color: #000000 !important;
+}
+
+.nav-rockbiz .header-widget-info {
+	background-color: rgba(0,0,0,.17)!important;
+	border-bottom:none;
+}
+
+.nav-rockbiz .header-top-info .header-widget .widget {
+    line-height: 100%;
+}
+
+.nav-rockbiz .header-top-info {
+    border-bottom: 0;
+}
+
+.nav-rockbiz .flex-fill {
+    -ms-flex-basis: 50% !important;
+    flex-basis: 50% !important;
+}
+
+.nav-rockbiz .flex-fill:nth-child(2) {
+    flex-basis: 18% !important;
+}
+
+.nav-rockbiz .header-wrapper {
+    min-height: 64px;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.nav-rockbiz .header-info {
+    display: flex;
+    align-items: center;
+}
+
+.nav-rockbiz .navigation {
+    padding: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.nav-rockbiz .logo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+
+.nav-rockbiz .logo img.navbar-brand{
+	padding: 0 10px;
+}
+.nav-rockbiz .logo a {
+    position: absolute;
+    width: 100%;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 0;
+    left: 0;
+    top: -10px;
+    padding: 12px;
+    border-radius: 0;
+}
+
+.nav-rockbiz .logo a:after {
+    content: "";
+    border: 2px dashed;
+    width: 88%;
+    height: 88%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 0;
+    opacity: 0.6;
+}
+
+.nav-rockbiz .logo a::before {
+    content: "";
+    border: 2px solid;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 0;
+    opacity: 0.6;
+}
+
+.nav-rockbiz .logo a,
+.nav-rockbiz .logo .site-description {
+    color: #fff;
+}
+
+.nav-rockbiz .theme-menu {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.nav-rockbiz .menubar {
+    text-align: left;
+}
+
+.nav-rockbiz .navigation .menubar .menu-wrap > li > a:after,
+.nav-rockbiz .navigation .menubar .menu-wrap > li.dropdown > a:after {
+    content: '';
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 0;
+    border-top: 2px dashed;
+    width: 0;
+    border-bottom: 0;
+    -webkit-transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+    transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+}
+
+.nav-rockbiz .navigation .menubar .menu-wrap > li.dropdown:hover > a:after,
+.nav-rockbiz .navigation .menubar .menu-wrap > li:hover > a:after,
+.nav-rockbiz .navigation .menubar .menu-wrap > li:focus > a:after,
+.nav-rockbiz .navigation .menubar .menu-wrap > li.focus > a:after,
+.nav-rockbiz .navigation .menubar .menu-wrap > li.active > a:after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.nav-rockbiz .menubar .menu-wrap > li > a {
+    line-height: 72px;
+    border-radius: 0;
+    color: #fff;
+}
+
+.nav-rockbiz .menu-right .header-search-toggle,
+.nav-rockbiz .menu-right #cart i {
+    color: #fff;
+}
+
+/*.nav-rockbiz .header-widget {
+    min-height: 86px;
+}*/
+
+.nav-rockbiz .header-widget .widget:first-child .contact-area {
+    padding-left: 0;
+}
+
+/*.nav-rockbiz .header-top-info .header-widget .widget,
+.nav-rockbiz .header-top-info .header-widget .widget .contact-area,
+.nav-rockbiz .header-top-info .header-widget .widget a {
+    color: #e5e5e5;
+}*/
+
+/*---------------------------------------
+    Slider sixteen
+-----------------------------------------*/
+.slider-section-sixteen .owl-dots {
+    display: none !important;
+}
+
+.slider-section-sixteen .owl-carousel .owl-nav .owl-prev {
+    border-radius: 20px 0 0 20px;
+}
+
+.slider-section-sixteen .owl-carousel .owl-nav .owl-next {
+    border-radius: 0 20px 20px 0;
+}
+
+.slider-section-sixteen .specia-content {
+    padding: 30px 25px;
+    background-color: rgb(0 0 0 / 60%);
+}
+
+@media (max-width: 767px) {
+    .slider-section-sixteen .specia-content {
+        padding: 17px;
+    }
+}
+
+.post_date {
+	background: #B61010;
+}
+
+.post_date h6 {
+   color: #ffffff;
+}
+
+
+/*---------------------------------------
+    Search Result
+-----------------------------------------*/	
+
+.page-wrapper .posts-navigation a {
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    padding: 12px 24px;
+    border-radius: 30px;
+    display: table-cell;
+    float: left;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+.page-wrapper .posts-navigation a:hover {
+    color: #fff;
+}
+
+.page-wrapper .posts-navigation .nav-next {
+    float: right;
+}
+
+
+.comment-form input[type="submit"]:hover,
+.comment-form input[type="submit"]:focus  {
+    color: #B61010;
+    background: #fff;
+}
+
+.wp-block-loginout a{
+	text-decoration:none;
+}
+
+.entry-content .more-link:hover,
+.entry-content .more-link:focus {
+    color: #ffffff;
+}
+
+.select2-container--default .select2-selection--single {
+    min-height: 2.35em;
+}
+
+.price_slider_wrapper .ui-slider .ui-slider-handle {
+    background: #ffffff;
+}
+
+.footer-sidebar .widget .woocommerce-product-search button:not(:hover):not(:focus) {
+    color: #fff;
+    border: solid 2px #fff;
+    background: transparent;
+}

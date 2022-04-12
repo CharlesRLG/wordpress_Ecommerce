@@ -1,0 +1,54 @@
+/*
+Theme Name: WP Custom Theme
+Theme URI: https://github.com/foo/wp-custom-theme/
+Author: Foo
+Author URI: https://example.com/
+Description: Une description plus moins longue de votre thème
+Tags: usage, couleur, style, accessiblité, etc
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 5.7.2
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wp-custom-theme
+*/
+.menu li {
+    list-style: none;
+    margin: 0px 50px;
+    padding: 5px 15px;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: rgb(206, 231, 253);
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+    text-align: center;
+    max-width: 1400px;
+}
+#formulaireContact {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    text-align: center;
+    min-width: 600px;
+}
+#formulaireContact input {
+    min-width: 300px;
+}
+#formulaireContact textarea {
+    min-width: 600px;
+    min-height: 400px;
+}
